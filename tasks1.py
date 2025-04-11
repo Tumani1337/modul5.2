@@ -41,10 +41,11 @@ def count_ones(number: int) -> int:
     return result
 
 def is_palindrom(n: int) -> True or False:
-
+    if not isinstance(n, int): raise TypeError
     lst_n = []
     result = False
-
+    if n < 0:
+        return False
     while n != 0:
         lst_n.append(n % 10)
 
