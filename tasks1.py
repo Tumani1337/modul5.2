@@ -23,3 +23,19 @@ def fibonacci(number: int) -> list:
     if number != 0: result.remove(result[-1])
 
     return result
+
+def count_ones(number: int) -> int:
+
+    if number < 0: raise ValueError
+    if not number.is_integer(): raise TypeError
+
+    result = 0
+
+    while number:
+        remind = number % 2
+        number //= 2
+
+        if remind == 1:
+            result += 1
+
+    return result
