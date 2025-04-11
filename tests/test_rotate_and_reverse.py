@@ -1,4 +1,4 @@
-from tasks import rotate_and_reverse
+from tasks2 import rotate_and_reverse
 import pytest
 
 @pytest.mark.parametrize("array, k, expected",

@@ -1,4 +1,4 @@
-from tasks import three_sum_unique
+from tasks2 import three_sum_unique
 import pytest
 
 @pytest.mark.parametrize("array, expected",

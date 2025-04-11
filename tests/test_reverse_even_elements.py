@@ -1,4 +1,4 @@
-from tasks import reverse_even_elements
+from tasks2 import reverse_even_elements
 import pytest
 
 @pytest.mark.parametrize("array, expected",

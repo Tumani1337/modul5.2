@@ -1,4 +1,4 @@
-from tasks import max_in_range
+from tasks2 import max_in_range
 import pytest
 
 @pytest.mark.parametrize("array, start, end, expected",

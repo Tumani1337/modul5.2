@@ -1,4 +1,4 @@
-from tasks import inc_number
+from tasks2 import inc_number
 import pytest
 
 @pytest.mark.parametrize("array, expected",
