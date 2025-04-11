@@ -56,3 +56,22 @@ def is_palindrom(n: int) -> True or False:
         result = True
 
     return  result
+
+def gcd(number1: int, number2: int) -> int:
+
+    if number1 < 0: raise ValueError
+    if number2 < 0: raise ValueError
+    if not number1.is_integer(): raise TypeError
+    if not number2.is_integer(): raise TypeError
+
+    result = [min(number1, number2), max(number1, number2)]
+    result1 = [result[0], result[1]]
+
+    while result1[0] != result1[1] and result1[1] != 0:
+
+        result1[0], result1[1] = min(result), max(result)
+        result = result1
+
+        result[1] = result[1] % result[0]
+
+    return result1[0]
